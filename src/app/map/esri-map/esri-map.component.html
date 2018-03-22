@@ -1,1 +1,6 @@
 <div #mapViewNode id="map"></div>
+<div id="textDiv">
+    <label>rotate degree:</label>
+    <input type="text" (keyup.enter)="rotateInputDeg($event)">
+    <button (click)="applyLastTransform()">last transform</button>
+</div>
